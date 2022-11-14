@@ -26,19 +26,18 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- - Desktop Screen :
-![Desktop Screen](/src/images/screenShot/loopstudios031.png)
+- Desktop Screen :
+![Desktop Screen](/images/ScreenShot/TipCalc_desktop.png)
 
 - Mobile Screen :
-![Desktop Screen](/src/images/screenShot/loopstudios031.mobile.png)
+![Desktop Screen](/images/ScreenShot/TipCalc_(iPhone%20XR).png)
 
 - Ipad Screen :
-![Desktop Screen](/src/images/screenShot/loopstudios031.iPad.png) -->
+![Desktop Screen](/images/ScreenShot/TipCalc_(iPad%20Air).png)
 
 
 ### Links
-<!-- 
-- Solution URL: [LoopStudios](https://loopstudios031.netlify.app/) -->
+- Solution URL: [TipCalculator](https://tip-calculator31.netlify.app/)
 <!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 
 ## My process
