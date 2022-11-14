@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter&family=Space+Mono:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 24px;
+}
+
+body {
+  background: hsl(185deg, 41%, 84%);
+}
+
+.container {
+  margin: 0 60px;
+  padding: 20px 50px;
+}
+.container header {
+  text-align: center;
+  margin: 70px;
+}
+.container header h1 {
+  line-height: 0.3em;
+}
+
+.main {
+  display: flex;
+  background: hsl(0deg, 0%, 100%);
+  padding: 40px;
+  border-radius: 25px;
+}
+.main input[type=text] {
+  border: none;
+  border-radius: 6px;
+  font-weight: 520;
+  text-align: right;
+  color: hsl(183deg, 95%, 25%);
+  background: hsl(189deg, 41%, 97%);
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+}
+.main input[type=text]::-moz-placeholder {
+  color: hsl(186deg, 23%, 75%);
+}
+.main input[type=text]:-ms-input-placeholder {
+  color: hsl(186deg, 23%, 75%);
+}
+.main input[type=text]::placeholder {
+  color: hsl(186deg, 23%, 75%);
+}
+.main input[type=text]:focus {
+  border: 3px solid hsl(172deg, 67%, 45%);
+}
+.main input[type=text]:hover {
+  cursor: pointer;
+}
+.main label {
+  color: hsl(180deg, 2%, 56%);
+}
+.main .icon {
+  display: block;
+  position: relative;
+  top: -45px;
+  left: 20px;
+  width: 5px;
+}
+.main .bill {
+  width: 100%;
+}
+.main .bill .select-tip {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 9px;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+}
+.main .bill .select-tip .tip {
+  background: hsl(183deg, 100%, 15%);
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  border-radius: 6px;
+}
+.main .bill .select-tip .tip h2 {
+  margin: 8px 0;
+  color: hsl(0deg, 0%, 100%);
+}
+.main .bill .select-tip .tip:hover {
+  cursor: pointer;
+}
+.main .bill .select-tip .tip:active {
+  background: hsl(172deg, 77%, 60%);
+}
+.main .bill .select-tip .tip:active h2 {
+  color: hsl(183deg, 100%, 15%);
+}
+.main .bill .select-tip #c-tip {
+  width: 90%;
+  padding: 8px 15px;
+}
+.main .bill .select-tip #c-tip::-moz-placeholder {
+  color: hsl(183deg, 100%, 27%);
+}
+.main .bill .select-tip #c-tip:-ms-input-placeholder {
+  color: hsl(183deg, 100%, 27%);
+}
+.main .bill .select-tip #c-tip::placeholder {
+  color: hsl(183deg, 100%, 27%);
+}
+.main .bill .number-people #msgError {
+  color: rgb(255, 101, 101);
+  float: right;
+  display: none;
+}
+.main .display {
+  width: 100%;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 25px;
+  background: hsl(183deg, 100%, 15%);
+}
+.main .display .box {
+  display: flex;
+  justify-content: space-between;
+}
+.main .display .txt {
+  line-height: 1px;
+}
+.main .display .txt h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+.main .display .txt h4 {
+  color: hsl(180deg, 1%, 47%);
+  font-size: 20px;
+}
+.main .display .number h2 {
+  font-size: 45px;
+  margin: 0;
+  color: hsl(172deg, 67%, 45%);
+}
+.main .display .reset {
+  text-align: center;
+  margin-top: 100px;
+}
+.main .display .reset input[type=reset] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 25px;
+  font-weight: bold;
+  background: hsl(172deg, 80%, 48%);
+}
+.main .display .reset input[type=reset]:disabled {
+  cursor: not-allowed;
+  background: hsl(171deg, 93%, 26%);
+}
+.main input[type=reset]:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    margin: 0;
+  }
+  .main {
+    display: block;
+  }
+  .main .bill .select-tip {
+    grid-template-columns: 30% 30% 30%;
+  }
+  .main .display {
+    margin: 0;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main .bill .select-tip {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 45% 45%;
+  }
+  .main .display .box .txt {
+    line-height: 0px;
+  }
+  .main .display .box .txt h3 {
+    font-size: 20px;
+  }
+  .main .display .box .txt h4 {
+    font-size: 19px;
+  }
+  .main .display .box .number h2 {
+    font-size: 30px;
+  }
+  .main .display .reset {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 280px) {
+  .box {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

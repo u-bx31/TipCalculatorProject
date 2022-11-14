@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 24px;
+}
+body {
+  background: hsl(185, 41%, 84%);
+}
+.container {
+  margin: 0 60px;
+  padding: 20px 50px;
+  header {
+    text-align: center;
+    margin: 70px;
+    h1 {
+      line-height: 0.3em;
+    }
+  }
+}
+.main {
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 25px;
+  //input
+  input[type="text"] {
+    border: none;
+    border-radius: 6px;
+    font-weight: 520;
+    text-align: right;
+    color: hsl(183, 95%, 25%);
+    background: hsl(189, 41%, 97%);
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+  }
+
+  input[type="text"]::placeholder {
+    color: hsl(186, 23%, 75%);
+  }
+  input[type="text"]:focus {
+    border: 3px solid hsl(172, 67%, 45%);
+  }
+  input[type="text"]:hover {
+    cursor: pointer;
+  }
+
+  //label color
+  label {
+    color: hsl(180, 2%, 56%);
+  }
+  .icon {
+    display: block;
+    position: relative;
+    top: -45px;
+    left: 20px;
+    width: 5px;
+  }
+  .bill {
+    width: 100%;
+
+    .select-tip {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 35% 35% 35%;
+      align-items: center;
+      justify-content: center;
+      row-gap: 9px;
+      column-gap: 9px;
+      .tip {
+        background: hsl(183, 100%, 15%);
+        width: 90%;
+        height: 50px;
+        text-align: center;
+        border-radius: 6px;
+        h2 {
+          margin: 8px 0;
+          color: hsl(0, 0%, 100%);
+        }
+      }
+      .tip:hover {
+        cursor: pointer;
+      }
+      .tip:active {
+        background: hsl(172, 77%, 60%);
+        h2 {
+          color: hsl(183, 100%, 15%);
+        }
+      }
+      #c-tip {
+        width: 90%;
+        padding: 8px 15px;
+      }
+      #c-tip::placeholder {
+        color: hsl(183, 100%, 27%);
+      }
+    }
+    .number-people {
+      #msgError {
+        color: rgb(255, 101, 101);
+        float: right;
+        display: none;
+      }
+    }
+  }
+
+  .display {
+    width: 100%;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 25px;
+    background: hsl(183, 100%, 15%);
+    .box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .txt {
+      h3 {
+        color: hsl(0, 0%, 100%);
+      }
+      h4 {
+        color: hsl(180, 1%, 47%);
+        font-size: 20px;
+      }
+      line-height: 1px;
+    }
+    .number {
+      h2 {
+        font-size: 45px;
+        margin: 0;
+        color: hsl(172, 67%, 45%);
+      }
+    }
+    .reset {
+      text-align: center;
+      margin-top: 100px;
+      input[type="reset"] {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 6px;
+        color: hsl(183, 100%, 15%);
+        font-size: 25px;
+        font-weight: bold;
+        background: hsl(172, 80%, 48%);
+      }
+      input[type="reset"]:disabled {
+        cursor: not-allowed;
+        background: hsl(171, 93%, 26%);
+      }
+    }
+  }
+  input[type="reset"]:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container {
+    margin: 0;
+  }
+  .main {
+    display: block;
+    .bill {
+      .select-tip {
+        grid-template-columns: 30% 30% 30%;
+      }
+    }
+    .display {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    margin: 0;
+    width: fit-content;
+  }
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+    .bill {
+      .select-tip {
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: 45% 45%;
+      }
+    }
+    .display {
+      .box {
+        .txt {
+          h3 {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 19px;
+          }
+          line-height: 0px;
+        }
+        .number {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+      .reset{
+        margin-top: 50px;
+      }
+    }
+  }
+}
+@media (max-width: 280px){
+    .box {
+        flex-direction: column;
+    }
+
+}

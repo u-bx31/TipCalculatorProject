@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>S P L I</h1>
+            <h1>T T E R</h1>
+        </header>
+        <div class="main">
+            <div class="bill">
+                <div class="insert-bill">
+                    <label for="Bill">Bill</label></br>
+                    <input type="text" id="bill" placeholder="0" >
+                    <span class="icon"><img src="images/icon-dollar.svg" alt=""></span>
+                </div>
+                <label for="selection">Select Tip %</label>
+                <div class="select-tip">
+                    <div class="tip 5%"><h2>5%</h2></div>
+                    <div class="tip 10%"><h2>10%</h2></div>
+                    <div class="tip 15%"><h2>15%</h2></div>
+                    <div class="tip 25%"><h2>25%</h2></div>
+                    <div class="tip 50%"><h2>50%</h2></div>
+                    <div id="tip custom"><input type="text" id="c-tip" placeholder="Custom"></div>
+                </div>
+                <div class="number-people">
+                    <label for="nop">Number of People</label>
+                    <small id="msgError">Can't be zero</small></br>
+                    <input type="text" id="numberp" placeholder="0">
+                    <span class="icon"><img src="images/icon-person.svg" alt=""></span>
+                </div>
+
+            </div>
+            <div class="display">
+                <div class="tip-amount box">
+                    <div class="txt">
+                        <h3>Tip Amount </h3>
+                        <h4> / person</h4>
+                    </div>
+                    <div class="number" >
+                        <h2 id="number-tip">$ 0.00</h2>
+                    </div>
+                </div>
+                <div class="total box ">
+                    <div class="txt">
+                        <h3>Total </h3>
+                        <h4> / person</h4>
+                    </div>
+                    <div class="number" >
+                        <h2 id="number-total">$ 0.00</h2>
+                    </div>
+                </div>
+                <div class="reset">
+                    <input type="reset" id="reset" disabled>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
